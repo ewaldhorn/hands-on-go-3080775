@@ -1,8 +1,12 @@
 // packages/basics/main.go
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
-	fmt.Printf("\nHello, world!\n")
+	fmt.Printf("\nYello, world!\n")
+	fmt.Printf("It's such a lovely %s!\n", time.Now().Weekday())
 }
